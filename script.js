@@ -1,8 +1,8 @@
 const canvas = document.getElementById("flowerCanvas");
 const ctx = canvas.getContext("2d");
 
-canvas.width = 400;
-canvas.height = 400;
+canvas.width = 800;
+canvas.height = 800;
 
 let flowers = [];
 
@@ -31,7 +31,7 @@ class Flower {
             ctx.arc(petalX, petalY, this.petalSize / 3, 0, Math.PI * 2);
             ctx.fill();
         }
-        ctx.fillStyle = "yellow";
+        ctx.fillStyle = "white";
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.petalSize / 5, 0, Math.PI * 2);
         ctx.fill();
@@ -39,8 +39,8 @@ class Flower {
 }
 
 function createFlowers() {
-    flowers.push(new Flower(200, 200, 50, "red"));
-    flowers.push(new Flower(100, 300, 40, "white"));
+    flowers.push(new Flower(200, 300, 40, "red"));
+    flowers.push(new Flower(100, 300, 40, "dark pink"));
     flowers.push(new Flower(300, 300, 40, "purple"));
 }
 
