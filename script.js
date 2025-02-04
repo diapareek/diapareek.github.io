@@ -23,7 +23,7 @@ class Flower {
 
     draw() {
         ctx.fillStyle = this.color;
-        for (let i = 0; i < 5; i++)
+        for (let i = 0; i < 5; i++) {
             let angle = (Math.PI * 2 * i) / 5;
             let petalX = this.x + Math.cos(angle) * this.petalSize;
             let petalY = this.y + Math.sin(angle) * this.petalSize;
