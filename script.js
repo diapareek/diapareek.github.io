@@ -40,7 +40,7 @@ class Flower {
 
 function createFlowers() {
     flowers.push(new Flower(200, 200, 50, "red"));
-    flowers.push(new Flower(100, 300, 40, "pink"));
+    flowers.push(new Flower(100, 300, 40, "white"));
     flowers.push(new Flower(300, 300, 40, "purple"));
 }
 
